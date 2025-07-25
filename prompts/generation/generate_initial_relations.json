@@ -1,0 +1,4 @@
+{
+  "system_message": "",
+  "user_message": "Generate {N} pairs ({entity1}, {entity2}) with relation \"{relation}\". Output the result in JSON format where 'relation_i' is the key for the i-th pair, 'entity1' is key for {entity1} and 'entity2' is key for {entity2}."
+}

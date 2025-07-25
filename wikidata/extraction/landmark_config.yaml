@@ -1,0 +1,19 @@
+main_qid: "Q811979"
+main_entity: "landmark"
+base_output_dir: "/ccs_data/marinela/architect_structure"
+subclasses_dir: "/ccs_data/marinela/subclasses"
+data_dir: "/ccs_data/marinela/wikidata_dump/processed_50000_en"
+pids: [ P84, P126, P127, P131, P137, P149, P17, P276, P466 ]
+pids_no_qid: [ P6375 ]
+entity_mapping:
+  city: [ P6375, P276, P131 ]
+  country: [ P17 ]
+  architect: [ P84 ]
+  style: [ P149 ]
+  organization: [ P466, P137, P127, P126 ]
+relation_mapping:
+  - [ [ P6375, P276, P131 ], landmark, city ]
+  - [ [ P17 ], landmark, country ]
+  - [ [ P84 ], landmark, architect ]
+  - [ [ P149 ], landmark, style ]
+  - [ [ P466, P137, P127, P126 ], landmark, organization ]

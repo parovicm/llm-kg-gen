@@ -1,0 +1,187 @@
+{
+  "concepts": {
+    "program": {
+      "attributes": {
+        "program_name": "string",
+        "program_type": "string",
+        "language": "string",
+        "release_date": "string",
+        "content_description": "string"
+      }
+    },
+    "person": {
+      "attributes": {
+        "person_name": "string",
+        "nationality": "string",
+        "birth_date": "string",
+        "profession": "string"
+      }
+    },
+    "song": {
+      "attributes": {
+        "song_name": "string",
+        "music_style": "string",
+        "language": "string",
+        "production_place": "string",
+        "release_time": "string"
+      }
+    },
+    "album": {
+      "attributes": {
+        "album_name": "string",
+        "music_style": "string",
+        "language": "string",
+        "production_place": "string",
+        "release_time": "string"
+      }
+    },
+    "album_series": {
+      "attributes": {
+        "album_series_name": "string",
+        "creation_time": "string",
+        "release_time": "string",
+        "producer": "string"
+      }
+    },
+    "award": {
+      "attributes": {
+        "award_name": "string",
+        "type": "string",
+        "organizer": "string",
+        "venue": "string",
+        "award_description": "string"
+      }
+    },
+    "award_series": {
+      "attributes": {
+        "award_name": "string",
+        "founder": "string",
+        "country_region": "string"
+      }
+    },
+    "institution": {
+      "attributes": {
+        "institution_name": "string",
+        "establishment_time": "string",
+        "headquarters_location": "string"
+      }
+    }
+  },
+  "relation": {
+    "person_sings_song": {
+      "source": "person",
+      "target": "song",
+      "name": "sings"
+    },
+    "person_writes_lyrics_for_song": {
+      "source": "person",
+      "target": "song",
+      "name": "writes_lyrics"
+    },
+    "person_arranges_song": {
+      "source": "person",
+      "target": "song",
+      "name": "arranges"
+    },
+    "person_releases_album": {
+      "source": "person",
+      "target": "album",
+      "name": "releases"
+    },
+    "song_is_program_theme_song": {
+      "source": "song",
+      "target": "program",
+      "name": "theme_song"
+    },
+    "song_is_program_ending_song": {
+      "source": "song",
+      "target": "program",
+      "name": "ending_song"
+    },
+    "song_is_program_insert_song": {
+      "source": "song",
+      "target": "program",
+      "name": "insert_song"
+    },
+    "song_is_program_opening_song": {
+      "source": "song",
+      "target": "program",
+      "name": "opening_song"
+    },
+    "program_includes_song": {
+      "source": "program",
+      "target": "song",
+      "name": "includes"
+    },
+    "album_belongs_to_album_series": {
+      "source": "album",
+      "target": "album_series",
+      "name": "belongs_to"
+    },
+    "album_belongs_to_album_season": {
+      "source": "album",
+      "target": "album_season",
+      "name": "belongs_to"
+    },
+    "album_season_belongs_to_album_series": {
+      "source": "album_season",
+      "target": "album_series",
+      "name": "belongs_to"
+    },
+    "institution_releases_song": {
+      "source": "institution",
+      "target": "song",
+      "name": "releases"
+    },
+    "institution_releases_album": {
+      "source": "institution",
+      "target": "album",
+      "name": "releases"
+    },
+    "institution_produces_song": {
+      "source": "institution",
+      "target": "song",
+      "name": "produces"
+    },
+    "institution_produces_album": {
+      "source": "institution",
+      "target": "album",
+      "name": "produces"
+    },
+    "person_wins_award": {
+      "source": "person",
+      "target": "award",
+      "name": "wins_award"
+    },
+    "song_wins_award": {
+      "source": "program",
+      "target": "award",
+      "name": "wins_award"
+    },
+    "award_belongs_to_award_series": {
+      "source": "award",
+      "target": "award_series",
+      "name": "belongs_to"
+    },
+    "person_and_person_are_friends": {
+      "source": "person",
+      "target": "person",
+      "name": "are_friends"
+    },
+    "person_and_person_collaborate": {
+      "source": "person",
+      "target": "person",
+      "name": "collaborate"
+    },
+    "person_and_person_are_schoolmates": {
+      "source": "person",
+      "target": "person",
+      "name": "are_schoolmates"
+    },
+    "person_and_person_are_in_a_group": {
+      "source": "person",
+      "target": "person",
+      "name": "are_in_a_group"
+    }
+  }
+}

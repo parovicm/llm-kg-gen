@@ -1,0 +1,21 @@
+main_qid: "Q47461344"
+main_entity: "book"
+base_output_dir: "/ccs_data/marinela/written_work"
+subclasses_dir: "/ccs_data/marinela/subclasses"
+data_dir: "/ccs_data/marinela/wikidata_dump/processed_50000_en"
+pids: [ P50, P123, P136, P166, P674, P179 ]
+pids_no_qid: [ ]
+entity_mapping:
+  author: [ P50 ]
+  publisher: [ P123 ]
+  genre: [ P136 ]
+  award: [ P166 ]
+  character: [ P674 ]
+  series: [ P179 ]
+relation_mapping:
+  - [ [ P50 ], book, author ]
+  - [ [ P123 ], book, publisher ]
+  - [ [ P136 ], book, genre ]
+  - [ [ P166 ], book, award ]
+  - [ [ P674 ], book, character ]
+  - [ [ P179 ], book, series ]

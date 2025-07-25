@@ -1,0 +1,92 @@
+{
+  "concepts": {
+    "program": {
+    },
+    "program_series": {
+    },
+    "person": {
+    },
+    "award": {
+    },
+    "award_series": {
+    },
+    "institution": {
+    },
+    "character": {
+    },
+    "playlist": {
+    }
+  },
+  "relations": {
+    "person_acts_in_program": {
+      "source": "person",
+      "target": "program",
+      "name": "acts_in"
+    },
+    "person_acts_in_program_series": {
+      "source": "person",
+      "target": "program_series",
+      "name": "acts_in"
+    },
+    "person_directs_program": {
+      "source": "person",
+      "target": "program",
+      "name": "directs"
+    },
+    "person_hosts_program": {
+      "source": "person",
+      "target": "program",
+      "name": "hosts"
+    },
+    "person_plays_character": {
+      "source": "person",
+      "target": "character",
+      "name": "plays"
+    },
+    "character_belongs_to_program": {
+      "source": "character",
+      "target": "program",
+      "name": "belongs_to"
+    },
+    "person_produces_program": {
+      "source": "person",
+      "target": "program",
+      "name": "produces"
+    },
+    "program_belongs_to_program_series": {
+      "source": "program",
+      "target": "program_series",
+      "name": "belongs_to"
+    },
+    "person_wins_award": {
+      "source": "person",
+      "target": "award",
+      "name": "wins_award"
+    },
+    "program_wins_award": {
+      "source": "program",
+      "target": "award",
+      "name": "wins_award"
+    },
+    "award_belongs_to_award_series": {
+      "source": "award",
+      "target": "award_series",
+      "name": "belongs_to"
+    },
+    "institution_releases_program": {
+      "source": "institution",
+      "target": "program",
+      "name": "releases"
+    },
+    "institution_produces_program": {
+      "source": "institution",
+      "target": "program",
+      "name": "produces"
+    },
+    "program_belongs_to_playlist": {
+      "source": "program",
+      "target": "playlist",
+      "name": "belongs_to"
+    }
+  }
+}

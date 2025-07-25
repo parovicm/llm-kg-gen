@@ -1,0 +1,14 @@
+httpx==0.27.0
+langchain-community==0.2.7
+openai==1.42.0
+openpyxl==3.1.5
+pandas==2.2.2
+pathlib==1.0.1
+pydantic==2.7.1
+python-dotenv==1.0.1
+SPARQLWrapper==2.0.0
+tenacity==8.5.0
+tqdm==4.66.4
+typing_extensions==4.11.0
+ujson==5.10.0
+urllib3==2.2.1

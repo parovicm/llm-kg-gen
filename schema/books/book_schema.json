@@ -1,0 +1,87 @@
+{
+  "concepts": {
+    "book": {
+      "attributes": {
+        "title": "string",
+        "language": "string",
+        "publication_date": "string",
+        "ISBN": "string",
+        "pages": "integer"
+      }
+    },
+    "author": {
+      "attributes": {
+        "author_name": "string",
+        "nationality": "string",
+        "birth_date": "string",
+        "genre_specialization": "string"
+      }
+    },
+    "publisher": {
+      "attributes": {
+        "publisher_name": "string",
+        "founding_year": "string",
+        "location": "string"
+      }
+    },
+    "genre": {
+      "attributes": {
+        "genre_name": "string",
+        "description": "string"
+      }
+    },
+    "award": {
+      "attributes": {
+        "award_name": "string",
+        "type": "string",
+        "organizer": "string",
+        "venue": "string",
+        "award_description": "string"
+      }
+    },
+    "character": {
+      "attributes": {
+        "character_name": "string",
+        "description": "string"
+      }
+    },
+    "series": {
+      "attributes": {
+        "series_name": "string",
+        "description": "string"
+      }
+    }
+  },
+  "relations": {
+    "author_writes_book": {
+      "source": "author",
+      "target": "book",
+      "name": "writes"
+    },
+    "book_published_by_publisher": {
+      "source": "book",
+      "target": "publisher",
+      "name": "published_by"
+    },
+    "book_belongs_to_genre": {
+      "source": "book",
+      "target": "genre",
+      "name": "belongs_to"
+    },
+    "book_wins_award": {
+      "source": "book",
+      "target": "award",
+      "name": "wins"
+    },
+    "book_features_character": {
+      "source": "book",
+      "target": "character",
+      "name": "features"
+    },
+    "book_belongs_to_series": {
+      "source": "book",
+      "target": "series",
+      "name": "belongs_to"
+    }
+  }
+}

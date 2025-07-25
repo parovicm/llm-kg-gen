@@ -1,0 +1,89 @@
+{
+  "concepts": {
+    "landmark": {
+      "attributes": {
+        "landmark_name": "string",
+        "type": "string",
+        "year_built": "string",
+        "historical_significance": "string"
+      }
+    },
+    "city": {
+      "attributes": {
+        "city_name": "string",
+        "population": "integer"
+      }
+    },
+    "country": {
+      "attributes": {
+        "country_name": "string",
+        "capital": "string",
+        "population": "integer",
+        "government_type": "string"
+      }
+    },
+    "architect": {
+      "attributes": {
+        "architect_name": "string",
+        "nationality": "string",
+        "birth_date": "string",
+        "notable_works": "string"
+      }
+    },
+    "style": {
+      "attributes": {
+        "style_name": "string",
+        "description": "string",
+        "characteristics": "string"
+      }
+    },
+    "event": {
+      "attributes": {
+        "event_name": "string",
+        "date": "string",
+        "type": "string",
+        "description": "string"
+      }
+    },
+    "organization": {
+      "attributes": {
+        "organization_name": "string",
+        "type": "string",
+        "founding_year": "string",
+        "mission": "string"
+      }
+    }
+  },
+  "relations": {
+    "landmark_located_in_city": {
+      "source": "landmark",
+      "target": "city",
+      "name": "located_in"
+    },
+    "landmark_located_in_country": {
+      "source": "landmark",
+      "target": "country",
+      "name": "located_in"
+    },
+    "landmark_designed_by_architect": {
+      "source": "landmark",
+      "target": "architect",
+      "name": "designed_by"
+    },
+    "landmark_represents_style": {
+      "source": "landmark",
+      "target": "style",
+      "name": "represents"
+    },
+    "landmark_hosted_event": {
+      "source": "landmark",
+      "target": "event",
+      "name": "hosted"
+    },
+    "landmark_managed_by_organization": {
+      "source": "landmark",
+      "target": "organization",
+      "name": "managed_by"
+    }
+  }
+}

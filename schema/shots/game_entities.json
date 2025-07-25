@@ -1,0 +1,74 @@
+{
+  "concepts": {
+    "game": {
+    },
+    "game_series": {
+    },
+    "character": {
+    },
+    "item": {
+    },
+    "game_system": {
+    },
+    "person": {
+    },
+    "award": {
+    },
+    "award_series": {
+    },
+    "institution": {
+    }
+  },
+  "relations": {
+    "game_includes_character": {
+      "source": "game",
+      "target": "character",
+      "name": "includes"
+    },
+    "game_includes_item": {
+      "source": "game",
+      "target": "item",
+      "name": "includes"
+    },
+    "game_includes_game_system": {
+      "source": "game",
+      "target": "game_system",
+      "name": "includes"
+    },
+    "person_develops_game": {
+      "source": "person",
+      "target": "game",
+      "name": "develops"
+    },
+    "person_is_game_player": {
+      "source": "person",
+      "target": "game",
+      "name": "player"
+    },
+    "game_wins_award": {
+      "source": "game",
+      "target": "award",
+      "name": "wins"
+    },
+    "person_wins_award": {
+      "source": "person",
+      "target": "award",
+      "name": "wins"
+    },
+    "award_belongs_to_award_series": {
+      "source": "award",
+      "target": "award_series",
+      "name": "belongs_to"
+    },
+    "institution_publishes_game": {
+      "source": "institution",
+      "target": "game",
+      "name": "publishes"
+    },
+    "institution_develops_game": {
+      "source": "institution",
+      "target": "game",
+      "name": "develops"
+    }
+  }
+}

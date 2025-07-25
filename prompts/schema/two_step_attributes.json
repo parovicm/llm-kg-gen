@@ -1,0 +1,4 @@
+{
+  "system_message": "You are an assistant for creating knowledge graphs and their schemas.",
+  "user_message": "You are provided with an example of schema for knowledge graph about {topic} in JSON format, given within triple quotes. You are also provided with a partial schema for {domain}, given within triple backticks. Following the schema about {topic}, modify the schema for {domain} by adding attributes to all entities. Output the full JSON schema for {domain}.\n Schema for {topic}: \"\"\"{topic_schema}\"\"\"\nSchema for {domain}: ```{domain_schema}```"
+}

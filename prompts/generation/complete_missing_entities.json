@@ -1,0 +1,4 @@
+{
+  "system_message": "",
+  "user_message": "You are given a JSON template within triple quotes. Your task is to fill this template with information about {entity1} \"{value1}\" with {entity2} \"{value2}\". Generate valid information or \"None\" for missing information. \n\"\"\"{schema}\"\"\"\n"
+}

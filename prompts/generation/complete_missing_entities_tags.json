@@ -1,0 +1,4 @@
+{
+  "system_message": "",
+  "user_message": "You are given a JSON template within triple quotes. Your task is to fill this template with information about {entity1} \"{value1}\" with {entity2} \"{value2}\". Attributes \"categories\" contain main categories or labels associated with entities. Include only informative and important labels which can be used for clustering entities into different groups. Ensure that valid information is generated and use \"None\" for missing or uncertain information. Output the result in JSON format. \n\"\"\"{schema}\"\"\"\n"
+}

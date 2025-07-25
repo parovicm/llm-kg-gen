@@ -1,0 +1,4 @@
+{
+  "system_message": "",
+  "user_message": "Generate {N} {entity}s with {input_entity} {input_entity_value}. If there are no matching {entity}s output \"None\". \n1. {example}\n"
+}

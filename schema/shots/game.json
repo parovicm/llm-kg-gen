@@ -1,0 +1,128 @@
+{
+  "concepts": {
+    "game": {
+      "attributes": {
+        "game_name": "string",
+        "game_type": "string",
+        "rating": "string",
+        "release_region": "string",
+        "content_description": "string"
+      }
+    },
+    "game_series": {
+      "attributes": {
+        "game_series_name": "string",
+        "content_description": "string"
+      }
+    },
+    "character": {
+      "attributes": {
+        "character_name": "string",
+        "gender": "string",
+        "profession": "string",
+        "skills": "string",
+        "level": "string"
+      }
+    },
+    "item": {
+      "attributes": {
+        "item_name": "string",
+        "effect": "string",
+        "status": "string",
+        "energy": "string",
+        "description": "string"
+      }
+    },
+    "game_system": {
+      "attributes": {
+        "game_system_name": "string",
+        "effect": "string",
+        "description": "string"
+      }
+    },
+    "person": {
+      "attributes": {
+        "person_name": "string",
+        "gender": "string",
+        "nationality": "string",
+        "birth_date": "string",
+        "profession": "string"
+      }
+    },
+    "award": {
+      "attributes": {
+        "award_name": "string",
+        "type": "string",
+        "organizer": "string",
+        "venue": "string",
+        "award_description": "string"
+      }
+    },
+    "award_series": {
+      "attributes": {
+        "award_name": "string",
+        "founder": "string",
+        "country_region": "string"
+      }
+    },
+    "institution": {
+      "attributes": {
+        "institution_name": "string",
+        "establishment_time": "string",
+        "headquarters_location": "string"
+      }
+    }
+  },
+  "relations": {
+    "game_includes_character": {
+      "source": "game",
+      "target": "character",
+      "name": "includes"
+    },
+    "game_includes_item": {
+      "source": "game",
+      "target": "item",
+      "name": "includes"
+    },
+    "game_includes_game_system": {
+      "source": "game",
+      "target": "game_system",
+      "name": "includes"
+    },
+    "person_develops_game": {
+      "source": "person",
+      "target": "game",
+      "name": "develops"
+    },
+    "person_is_game_player": {
+      "source": "person",
+      "target": "game",
+      "name": "player"
+    },
+    "game_wins_award": {
+      "source": "game",
+      "target": "award",
+      "name": "wins"
+    },
+    "person_wins_award": {
+      "source": "person",
+      "target": "award",
+      "name": "wins"
+    },
+    "award_belongs_to_award_series": {
+      "source": "award",
+      "target": "award_series",
+      "name": "belongs_to"
+    },
+    "institution_publishes_game": {
+      "source": "institution",
+      "target": "game",
+      "name": "publishes"
+    },
+    "institution_develops_game": {
+      "source": "institution",
+      "target": "game",
+      "name": "develops"
+    }
+  }
+}

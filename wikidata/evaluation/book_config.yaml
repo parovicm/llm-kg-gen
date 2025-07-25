@@ -1,0 +1,14 @@
+data_dir: "/ccs_data/marinela/written_work/tmp"
+schema_file: "/ccs_data/marinela/projects/llm-kg-gen/schema/books/book_schema_processed_categories.json"
+output: "/ccs_data/marinela/data_backup"
+domain: "books_llama_cove"
+skip_entities: [ ]
+
+mapping:
+  book: "title",
+  author: "author_name"
+  publisher: "publisher_name"
+  genre: "genre_name"
+  award: "award_name"
+  character: "character_name"
+  series: "series_name"

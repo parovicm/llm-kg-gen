@@ -1,0 +1,14 @@
+data_dir: "/ccs_data/marinela/architect_structure/tmp"
+schema_file: "/ccs_data/marinela/projects/llm-kg-gen/schema/landmarks/landmarks_schema_processed_categories.json"
+output: "/ccs_data/marinela/data_backup"
+domain: "landmarks_llama_cove"
+skip_entities: [ "event" ]
+
+mapping:
+  landmark: "landmark_name"
+  city: "city_name"
+  country: "country_name"
+  architect: "architect_name"
+  style: "style_name"
+  event: "event_name"
+  organization: "organization_name"
